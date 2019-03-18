@@ -1,0 +1,83 @@
+\documentclass[letterpaper]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{relsize}
+\usepackage{multicol}
+\usepackage{mdwlist}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\pagestyle{empty}
+\newcommand*\titleResume[3]{\vbox to 0pt{\hfill\scriptsize\color{gray}{#3}}\vspace{-0.4em}\noindent{\LARGE\textbf{#1}}\ \ \ \emph{#2}}
+\newcommand*\bull{ \  \ $\cdot$\  \ }
+\newcommand*\roottitle[1]{\subsection*{#1}}
+\newcommand*\horizontalrule[2]{\vspace{#1}{\hrule}\vspace{#2}}
+\newcommand*\headedSection[3]{\begin{indentpar}{15pt}\item[]\textscale{1.1}{#1}\hfill\textsc{#2}{#3}\end{indentpar}}
+\newcommand*\headedSabSection[2]{\begin{indentpar}{15pt}\item[]\textbf{#1}\hfill\emph{#2}\end{indentpar}}
+\newcommand*\body[1]{\begin{indentpar}{45pt}\item[]{#1}\end{indentpar}}
+\newcommand*\inlineHeadedSection[2]{\begin{basedescript}{\setlength{\leftmargin}{30pt}}\item[\hspace{15pt}\textbf{#1}]{#2}\end{basedescript}}
+\newenvironment{indentpar}[1]{
+\begin{list}{}{\setlength{\leftmargin}{#1}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt}\setlength{\topsep}{0pt}}}{\end{list}}
+\begin{document}
+\titleResume{Jonny Wilson}{August 25 1987}{Last updated \today}
+\\
+\noindent jonnylwilson@gmail.com\bull (469)269-9378\bull www.linkedin.com/in/jonnylwilson
+\\
+\noindent Seattle, WA\bull 98121
+\horizontalrule{0.4em}{-0.4em}
+\roottitle{Summary}
+\begin{multicols}{2}
+{\noindent\emph{Performance driven engineer with 10 years’ expertise, in the
+design, development, software and commissioning of industrial
+control systems. With a speciality in material handling and conveyor control systems.}
+\\
+\\
+With over a 150 successfully completed projects
+spanning the, municipal, food \& beverage, automotive, milling, and marine
+industries. Skilled in the ability to troubleshoot, debug, and support
+manufacturing machinery.
+
+Has a genuine interest to further his knowledge and improve
+understanding of processes to achieve the best possible result.}
+\end{multicols}
+\horizontalrule{-0.3em}{-0.4em}
+\roottitle{Experience}
+\headedSection{Systems Interface Inc.}{Washington, USA}
+{\headedSabSection{Senior Project Engineer}{Jul '14 - Present}}
+\body{Responsible for all phases of automation engineering; Control panel
+electrical mechanical design, PLC \& HMI Programming, drafting, device
+specification, project commissioning, customer training, support and service.
+Manage all aspects of projects including scheduling, trade coordination, and
+customer communication. Mentoring and Management a team of
+engineers. Notable projects include: 2\textsuperscript{nd} largest Apple palletizer system in the U.S, 56-Lane High speed sortation systems for a major clothing distributor, 30+ conveyor systems for various craft brewery's.}
+\headedSection{Eltech Electric Inc}{Washington, USA}
+{\headedSabSection{Electrical Control Systems Engineer}{Jan '14 - Jul '14}}
+\body{Working with RSlogix5000 and Factory Talk View Studio; design and development of AMS,
+ generator control systems, and brewing control systems, using
+various protocols including Modbus, CAN bus, and Ethernet IP to communicate to
+proprietary equipment.}
+\headedSection{PK Electrical Ltd}{Carlisle, UK}
+{\headedSabSection{Electrical Controls Systems Engineer}{Jan '09 - Jan '14}}
+\body{Design and Implement Industrial Control systems for the Food and
+Beverage,automotive and milling industries, using Allen Bradley, Siemens and
+Mitsubishi PLC and HMI’s, utilizing various communications including; Ethernet
+IP, Profibus, ControlNet, DeviceNet, and AS-I Bus.}
+\horizontalrule{1em}{-0.4em}
+\roottitle{Education}
+\headedSection{Carlisle College}{Carlisle, UK}
+{\headedSabSection{BEng Industrial Instrumentation and Control Engineering }{2006 - 2009}}
+\body{Studies focused on Industrial programming languages and
+principles.Ladderlogic, Statement List, Pascal, Visual Programming (Labview).
+Simulation using Matlab.}
+\horizontalrule{1em}{-0.4em}
+\roottitle{Skills}
+\inlineHeadedSection{Technical Expertise:}
+{Expert in Ladderlogic,and Statement list PLC programming. Development of
+modular, re-usable, maintainable code. Proficient in AutoCAD(custom lisps and
+scripting) and Eplan P8 Electrical. Solid knowledge of web technologies
+(HTML/CSS), expert in advanced networking configuration, barcode scanner/imager configuration, vision systems, SQL database development, knowledge of various print \& apply engines, TCP/IP socket 
+communications, Modbus (TCP/IP \& RTU), VPN configuration. }
+\horizontalrule{0em}{-0.4em}
+\roottitle{Interests}
+\inlineHeadedSection{Non exhaustive and in alphabetical order:}
+{Hiking, music, open source, Running, software development, Travelling, Unix, Vim.}
+\end{document}
